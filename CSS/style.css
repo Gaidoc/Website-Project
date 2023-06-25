@@ -1,0 +1,353 @@
+#outerheader {
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #003366;
+}
+
+#header {
+    width: 990px;
+    padding-left: 8px;
+    width: 95%;
+    height: 60px;
+    background: #003366;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+#logo {
+    margin-top: 16px;
+    text-align: left;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: rgb(209, 221, 233);
+    display: table;
+}
+
+#main {
+    text-align: center;
+}
+
+.container {   
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content 
+{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row button {
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+               -5px -5px 8px #ffff;
+}
+
+.row button:hover 
+{
+    box-shadow:  inset 5px 5px 8px rgba(16, 16, 16, .1),
+                 inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+.display #screen 
+{
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+
+#eval 
+{
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+                inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover 
+{
+    box-shadow: inset 5px 5px 8px #00ace6,
+                inset -5px -5px 8px #00ace6;
+}
+
+#ac 
+{
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover 
+{
+    box-shadow: inset 5px 5px 8px #2eb82e,
+                inset -5px -5px 8px #33cc33;
+}
+
+#ce 
+{
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover 
+{
+      box-shadow: inset 5px 5px 8px #e60073,
+                  inset -5px -5px 8px #ff3399;
+}
+
+#content {
+    width: 800px;
+    float: left;
+    padding-left: 20px
+}
+
+#content h1 {
+    color: #003366;
+    font-family: arial,helvetica,sans-serif;
+}
+
+#content p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#breadcrumbs {
+    padding: 7px;
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+    font-family: arial,helvetica,sans-serif;
+    color: #003366;
+}
+
+#breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+nav {
+    margin: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#navlistwrap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic_calculator {
+    font-size: x-large;
+    font-family: arial,helvetica,sans-serif;
+    margin: 70px;
+}
+
+.scientific_calculator {
+    font-size: x-large;
+    font-family: arial,helvetica,sans-serif;
+    margin: 70px;
+}
+
+.finance_calculator {
+    font-size: x-large;
+    font-family: arial,helvetica,sans-serif;
+    margin: 70px;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button a img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button a img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#footer {
+    margin: 0;
+    display: table-row;
+    bottom: 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    height: 0;
+}
+
+.footer .footer_links ul {
+    padding: 0;
+    display: flex;
+}
+
+.footer .footer_links ul li {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 15px 0 0;
+    color: #fff;
+    list-style-type: none;
+}
+
+.footer .footer_links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_wrapper .footer_links ul li {
+    font-family: "MullerBold",arial,sans-serif;
+    font-size: 18px;
+}
+
+.footer_wrapper .footer_links ul li:hover {
+    text-decoration: underline;
+}
+
+.footer_wrapper {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo_and_social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_wrapper .social_links {
+    display: flex;
+    align-items: left;
+}
+
+.footer_wrapper .copyright {
+    font-family: "MullerMedium", "Arial" , arial, sans-serif;
+    font-size: 12px;
+}
+
+.social_links li {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0;
+}
